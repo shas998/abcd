@@ -25,20 +25,17 @@ jobs:
           command: npm start
           background: true
       - run: npm run test
-      
-workflows:
-   version: 2
-   nightly:
-     triggers:
-       - schedule:
-           cron: "0 0 * * *"
-           filters:
-             branches:
-               only:
-                 - master
 
 workflows:
   version: 2
+  nightly:
+    triggers:
+      - schedule:
+        cron: "0 0 * * *"
+        filters:
+          branches:
+            only:
+              - master
   build:
     jobs:
       - test
