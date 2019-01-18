@@ -27,14 +27,15 @@ jobs:
       - run: npm run test
 
 workflows:
-  version: 2
-    triggers:
-      - schedule:
-        cron: "0 0 * * *"
-        filters:
-          branches:
-            only:
-              - master
-    jobs:
-      - build
-      - test
+   version: 2
+   nightly:
+     triggers:
+       - schedule:
+           cron: "0 0 * * *"
+           filters:
+             branches:
+               only:
+                 - master
+                 - beta
+     jobs:
+       - test
