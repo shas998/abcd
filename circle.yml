@@ -1,13 +1,5 @@
 version: 2
 jobs:
-  schedule-workflows:
-    triggers:
-      - schedule:
-          cron: "0 0 * * *"
-          filters:
-            branches:
-              only:
-                - master
   test:
     docker:
       - image: cypress/base:10
