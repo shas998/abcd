@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  nightly:
+  schedule-workflows:
     triggers:
       - schedule:
           cron: "0 0 * * *"
