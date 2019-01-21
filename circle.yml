@@ -31,7 +31,7 @@ workflows:
   commit:
     jobs:
       - test
-    nightly:
+  nightly:
     triggers:
       - schedule:
           cron: "0 0 * * *"
@@ -39,3 +39,5 @@ workflows:
             branches:
               only:
                 - master
+    jobs:
+      - coverage
