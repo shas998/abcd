@@ -14,7 +14,7 @@
 describe('First Scenario', function () {
   it('.should() - assert that <title> is correct', function () {
     // https://on.cypress.io/visit
-    cy.visit('https://www.t-mobile.cz/tarify')
+   // cy.visit('https://www.t-mobile.cz/tarify')
 
     // Here we've made our first assertion using a '.should()' command.
     // An assertion is comprised of a chainer, subject, and optional value.
