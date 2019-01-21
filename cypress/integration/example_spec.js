@@ -23,7 +23,7 @@ describe('First Scenario', function () {
     // https://on.cypress.io/and
 
     // https://on.cypress.io/title
-    cy.title().should('include', 'Neomezené tarify: Volání, SMS a internet v mobilu - T-Mobile.cz')
+   // cy.title().should('include', 'Neomezené tarify: Volání, SMS a internet v mobilu - T-Mobile.cz')
     //   ↲               ↲            ↲
     // subject        chainer      value
   })
